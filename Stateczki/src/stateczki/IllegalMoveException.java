@@ -9,7 +9,8 @@ package stateczki;
  *
  * @author sba
  */
- enum State {
-    EMPTY, HIT, MISS, SUNK, STAY
-    
+public class IllegalMoveException extends Exception {
+    public IllegalMoveException(String message){
+        super(message);
+    }
 }

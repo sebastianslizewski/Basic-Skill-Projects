@@ -14,8 +14,11 @@ public class Field {
  private final int x;
  private final int y;
  private State state;
+ private IShip ship;
  
- 
+ public void setShip(IShip ship){
+     this.ship = ship;
+ }
  public Field(int x, int y, State state){
      this.x = x;
      this.y = y;
@@ -40,5 +43,8 @@ public class Field {
  public void setState(State state){
      this.state = state;
  }
+ public State getState() {
+        return state;
+    }
  
 }

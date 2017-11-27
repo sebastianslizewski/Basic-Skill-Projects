@@ -9,7 +9,16 @@ package stateczki;
  *
  * @author sba
  */
- enum State {
-    EMPTY, HIT, MISS, SUNK, STAY
+public interface IShip {
     
-}
+    int getDecksCount();
+    
+    void hit();
+    
+    boolean isSunk();
+    
+    void setOnField(Field field, int deckNo);
+    }
+
+
+

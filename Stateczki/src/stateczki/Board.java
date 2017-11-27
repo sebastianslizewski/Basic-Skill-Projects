@@ -15,6 +15,9 @@ public class Board {
     
    private Field [][] fields = new Field [BOARD_SIZE][BOARD_SIZE];
    
+   private int shipsCount;
+   private int numberOfShipsByDeck[] = new int [SHIP_TYPES_COUNT];
+   private static final int SHIP_TYPES_COUNT = 4;
    public Board(){
        
        for (int y = 0; y < BOARD_SIZE; y++) {
@@ -63,5 +66,34 @@ public class Board {
                               
             } System.out.print('\n');
         } 
+    }
+
+    public void addShip(int x, int y, IShip ship ) throws IllegalMoveException  {
+        
+        if(numberOfShipsByDeck[ship.getDecksCount() - 1] 
+                    == getTotalCountOfShips(ship.getDecksCount())){
+            throw new IllegalMoveException("You have all one masts set!");
+        }
+       
+       
+        if( x < 0 || x >= BOARD_SIZE || y < 0 || y >= 10){
+            throw new IllegalMoveException("Ship set outside board!");
+        }
+        ship.setOnField(fields[y][x], 0);
+       
+        shipsCount++;
+        numberOfShipsByDeck[ship.getDecksCount() - 1]++;
+    }
+
+    public int getShipsCount() {
+        return shipsCount;
+    }
+    
+    public Field getField(int x, int y) {
+        return fields[y][x];
+    }
+
+    private int getTotalCountOfShips(int decksCount) {
+        return SHIP_TYPES_COUNT - decksCount + 1;
     }
 }
