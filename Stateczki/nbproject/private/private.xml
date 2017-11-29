@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="6">
+        <file>
+            <url>test/stateczki/BoardTest.java</url>
+            <bookmark id="4">
+                <name/>
+                <line>107</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/stateczki/Board.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>124</line>
+                <key/>
+            </bookmark>
+            <bookmark id="5">
+                <name/>
+                <line>140</line>
+                <key/>
+            </bookmark>
+            <bookmark id="3">
+                <name/>
+                <line>147</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/Ships.java</file>
+            <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/WarShip.java</file>
+            <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/Main.java</file>
             <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/State.java</file>
+            <file>file:/D:/moj%20projekt/Stateczki/Stateczki/test/stateczki/BoardTest.java</file>
             <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/Field.java</file>
             <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/Board.java</file>
+            <file>file:/D:/moj%20projekt/Stateczki/Stateczki/src/stateczki/Ship.java</file>
         </group>
     </open-files>
 </project-private>

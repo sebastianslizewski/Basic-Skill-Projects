@@ -7,7 +7,7 @@ package stateczki;
 
 /**
  *
- * @author sba
+ * @author sebastianslizewski
  */
  enum State {
     EMPTY, HIT, MISS, SUNK, STAY
